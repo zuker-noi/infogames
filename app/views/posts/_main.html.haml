@@ -1,0 +1,10 @@
+.main-posts
+  - @posts.each do |post|
+    .main-posts__post
+      %ul.main-posts__post__title-box
+        %li.main-posts__post__title-box--title
+          = post.title
+        %li.main-posts__post__title-box--evaluation
+          = post.evaluation
+      .main-posts__post__text
+        = post.text

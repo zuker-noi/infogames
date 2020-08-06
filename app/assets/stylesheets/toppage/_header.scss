@@ -1,0 +1,45 @@
+.header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+  &__left {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__icon {
+    }
+    &__btn {
+      height: 100%;
+      line-height: 80px;
+      color: black;
+    }
+  }
+  &__right {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__register {
+      display: block;
+      padding: 16px 0;
+      border-radius: 2px;
+      background-color: #ff9600;
+      color: #fff;
+      text-align: center;
+      width: 45%;
+    }
+    &__log-in {
+      display: block;
+      padding: 16px 0;
+      border: 1px solid #ff9600;
+      border-radius: 2px;
+      background-color: #fff;
+      color: #ff9600;
+      text-align: center;
+      width: 45%;
+    }
+  }
+}
