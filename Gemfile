@@ -64,3 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
 gem 'compass-rails', '3.1.0'
 gem 'haml-rails'
+
+gem 'carrierwave', '~> 2.0'
+gem 'mini_magick'

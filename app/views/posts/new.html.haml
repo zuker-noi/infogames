@@ -3,6 +3,7 @@
     %h3
       投稿ページ
     = form.text_field :title, placeholder: "タイトルを入力してください"
-    = form.text_field :image, placeholder: "Image Url"
+    = form.fields_for :post_images do |i|
+      = i.file_field :src
     = form.text_area :body, placeholder: "本文を入力してください"
     = form.submit "SEND"
