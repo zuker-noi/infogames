@@ -8,4 +8,17 @@ class PostsController < ApplicationController
     @post.post_images.new
   end
 
+  def create
+    @post = Post.new(post_params)
+    if @post.save
+      redirect_to root_path
+    else
+      render :new
+    end
+  end
+
+  def post_params
+    params.require(:post).permit(:title, :body, post_images_attributes: [:src])
+  end
+
 end
