@@ -1,27 +1,35 @@
 .main-posts {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   &__post {
     margin: 10px 0;
-    border: solid 2px;
+    border: solid 1px;
+    border-color: lightsalmon;
     &__title-box {
       display: flex;
-      justify-content: flex-start;
-      font-size: 20px;
+      justify-content: space-between;
+      font-size: 15px;
+      background-color: lightsalmon;
+      line-height: 25px;
       &--title {
         display: block;
         margin: 5px 10px;
+        font-size: 23px;
       }
       &--evaluation {
         display: block;
-        margin: 0 5px;
+        margin: 5px 10px;
+      }
+      &--time {
+        display: block;
         margin: 5px 10px;
       }
     }
     &__text {
-      font-size: 25px;
+      font-size: 21px;
       font-family: "sans-serif";
-      margin: 5px 10px;
+      margin: 15px 10px;
+      line-height: 26px;
     }
   }
 }

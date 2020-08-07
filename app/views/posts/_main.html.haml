@@ -6,5 +6,7 @@
           = post.title
         %li.main-posts__post__title-box--evaluation
           = post.evaluation
+        %li.main-posts__post__title-box--time
+          = post.updated_at.to_s(:datetime_jp)
       .main-posts__post__text
         = post.body
