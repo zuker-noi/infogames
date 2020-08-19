@@ -1,9 +1,12 @@
+= render 'header'
+
 .new-post
   = form_with model: @post do |form|
-    %h3
-      投稿ページ
-    = form.text_field :title, placeholder: "タイトルを入力してください"
-    = form.fields_for :post_images do |i|
-      = i.file_field :src
-    = form.text_area :body, placeholder: "本文を入力してください"
-    = form.submit "SEND"
+    .new-post__box
+      %h3
+        投稿ページ
+      = form.fields_for :post_images do |i|
+        = i.file_field :src, class: 'new-post__box--image'
+      = form.text_field :title, placeholder: "タイトルを入力してください", class: 'new-post__box--title'
+      = form.text_area :body, placeholder: "本文を入力してください", class: 'new-post__box--text'
+      = form.submit "SEND", class: 'new-post__box--sendbtn'

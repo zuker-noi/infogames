@@ -17,6 +17,8 @@ class PostsController < ApplicationController
     end
   end
 
+  private
+  
   def post_params
     params.require(:post).permit(:title, :body, post_images_attributes: [:src])
   end
